@@ -19,7 +19,7 @@ public class GetEmployeeDetails {
 	
 	CRUD crud=new CRUD();
 	@RequestMapping("/empdet")
-	public String empdetails(@RequestParam(name="empId",required=true,defaultValue="704771") int empId,Model m) {
+	public String empdetails(@RequestParam(name="empId",required=true,defaultValue="704876") int empId,Model m) {
 		System.out.println(empId);
 		Employee emp=crud.getDetails(empId);
 //		System.out.println(emp.toString());
